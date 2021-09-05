@@ -1,0 +1,72 @@
+﻿Patch
+=====
+
+.. currentmodule:: pyhf.patchset
+
+.. autoclass:: Patch
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: Patch.metadata
+   .. autoattribute:: Patch.name
+   .. autoattribute:: Patch.operations
+   .. autoattribute:: Patch.values
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+   
+   

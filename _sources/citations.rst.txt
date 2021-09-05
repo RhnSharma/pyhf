@@ -1,0 +1,48 @@
+Use and Citations
+=================
+
+.. raw:: html
+
+   <p id="dev-version"><strong>Warning:</strong> This is a development version and should not be cited. To find the specific version to cite, please go to <a href="https://pyhf.readthedocs.io/">ReadTheDocs</a>.</p>
+
+Citation
+--------
+
+The preferred BibTeX entry for citation of ``pyhf`` includes both the  `Zenodo <https://zenodo.org/>`__
+archive and the `JOSS <https://joss.theoj.org/>`__ paper:
+
+.. literalinclude:: bib/preferred.bib
+   :language: bibtex
+
+Use in Publications
+-------------------
+
+The following is an updating list of citations and use cases of :code:`pyhf`.
+There is an incomplete but automatically updated `list of citations on INSPIRE
+<https://inspirehep.net/literature/1845084>`__ as well.
+
+Use Citations
+~~~~~~~~~~~~~
+
+.. bibliography:: bib/use_citations.bib
+   :list: bullet
+   :all:
+   :style: plain
+
+General Citations
+~~~~~~~~~~~~~~~~~
+
+.. bibliography:: bib/general_citations.bib
+   :list: bullet
+   :all:
+   :style: plain
+
+Published Statistical Models
+----------------------------
+
+Updating list of HEPData entries for publications using ``HistFactory`` JSON statistical models:
+
+.. bibliography:: bib/HEPData_likelihoods.bib
+   :list: bullet
+   :all:
+   :style: plain

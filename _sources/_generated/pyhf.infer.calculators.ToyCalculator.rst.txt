@@ -1,0 +1,61 @@
+﻿ToyCalculator
+=============
+
+.. currentmodule:: pyhf.infer.calculators
+
+.. autoclass:: ToyCalculator
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: ToyCalculator.distributions
+   
+   
+   .. automethod:: ToyCalculator.expected_pvalues
+   
+   
+   .. automethod:: ToyCalculator.pvalues
+   
+   
+   .. automethod:: ToyCalculator.teststatistic
+   
+
+   
+   

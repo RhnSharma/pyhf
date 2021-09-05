@@ -1,0 +1,6 @@
+﻿pyhf.infer.mle.fit
+==================
+
+.. currentmodule:: pyhf.infer.mle
+
+.. autofunction:: fit

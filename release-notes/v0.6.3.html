@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>v0.6.3 &mdash; pyhf 0.6.4.dev2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+        <script src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyhf
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.4
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../likelihood.html">Likelihood Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learn.html">Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outreach.html">Outreach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Developing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../babel.html">Translations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli.html">Command Line API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">Python API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../citations.html">Use and Citations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../governance/ROADMAP.html">Roadmap (2019-2020)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release-notes.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors.html">Contributors</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyhf</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><code class="docutils literal notranslate"><span class="pre">v0.6.3</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/release-notes/v0.6.3.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="release-v0-6-3">
+<h1><a class="reference external" href="https://github.com/scikit-hep/pyhf/releases/tag/v0.6.3"><code class="docutils literal notranslate"><span class="pre">v0.6.3</span></code></a><a class="headerlink" href="#release-v0-6-3" title="Permalink to this headline">¶</a></h1>
+<p>This is a patch release from <code class="docutils literal notranslate"><span class="pre">v0.6.2</span></code> → <code class="docutils literal notranslate"><span class="pre">v0.6.3</span></code>.</p>
+<div class="section" id="important-notes">
+<h2>Important Notes<a class="headerlink" href="#important-notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>With the addition of writing ROOT files in <a class="reference external" href="https://github.com/scikit-hep/uproot4/releases/tag/4.1.0"><code class="docutils literal notranslate"><span class="pre">uproot</span></code> <code class="docutils literal notranslate"><span class="pre">v4.1.0</span></code></a> the
+<code class="docutils literal notranslate"><span class="pre">xmlio</span></code> extra no longer requires <code class="docutils literal notranslate"><span class="pre">uproot3</span></code> and all dependencies on
+<code class="docutils literal notranslate"><span class="pre">uproot3</span></code> and <code class="docutils literal notranslate"><span class="pre">uproot3-methods</span></code> have been dropped.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1567">#1567</a>)</p></li>
+<li><p>All backends are now fully compatible and tested with
+<a class="reference external" href="https://www.python.org/dev/peps/pep-0596/">Python 3.9</a>.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1574">#1574</a>)</p></li>
+<li><p>The TensorFlow backend now supports compatibility with TensorFlow <code class="docutils literal notranslate"><span class="pre">v2.2.1</span></code>
+and later and TensorFlow Probability <code class="docutils literal notranslate"><span class="pre">v0.10.1</span></code> and later.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1001">#1001</a>)</p></li>
+<li><p>The <a class="reference internal" href="../_generated/pyhf.workspace.Workspace.html#pyhf.workspace.Workspace.data" title="pyhf.workspace.Workspace.data"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.workspace.Workspace.data()</span></code></a> <code class="docutils literal notranslate"><span class="pre">with_aux</span></code> keyword arg has been
+renamed to <code class="docutils literal notranslate"><span class="pre">include_auxdata</span></code> to improve API consistency.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1562">#1562</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="fixes">
+<h2>Fixes<a class="headerlink" href="#fixes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The weakref bug with Click <code class="docutils literal notranslate"><span class="pre">v8.0+</span></code> was resolved.
+<code class="docutils literal notranslate"><span class="pre">pyhf</span></code> is now fully compatible with Click <code class="docutils literal notranslate"><span class="pre">v7</span></code> and <code class="docutils literal notranslate"><span class="pre">v8</span></code> releases.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1530">#1530</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="python-api">
+<h3>Python API<a class="headerlink" href="#python-api" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Model parameter names are now propagated to optimizers through addition of the
+<a class="reference internal" href="../_generated/pyhf.pdf._ModelConfig.html#pyhf.pdf._ModelConfig.par_names" title="pyhf.pdf._ModelConfig.par_names"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.pdf._ModelConfig.par_names()</span></code></a> API.
+<a class="reference internal" href="../_generated/pyhf.pdf._ModelConfig.html#pyhf.pdf._ModelConfig.par_names" title="pyhf.pdf._ModelConfig.par_names"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.pdf._ModelConfig.par_names()</span></code></a> also handles non-scalar modifiers with
+1 parameter.
+(PRs <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1536">#1536</a>, <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1560">#1560</a>)</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyhf</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">pyhf</span><span class="o">.</span><span class="n">simplemodels</span><span class="o">.</span><span class="n">uncorrelated_background</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">signal</span><span class="o">=</span><span class="p">[</span><span class="mf">12.0</span><span class="p">,</span> <span class="mf">11.0</span><span class="p">],</span> <span class="n">bkg</span><span class="o">=</span><span class="p">[</span><span class="mf">50.0</span><span class="p">,</span> <span class="mf">52.0</span><span class="p">],</span> <span class="n">bkg_uncertainty</span><span class="o">=</span><span class="p">[</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">]</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">parameters</span>
+<span class="go">[&#39;mu&#39;, &#39;uncorr_bkguncrt&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">npars</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">par_names</span><span class="p">()</span>
+<span class="go">[&#39;mu&#39;, &#39;uncorr_bkguncrt[0]&#39;, &#39;uncorr_bkguncrt[1]&#39;]</span>
+</pre></div>
+</div>
+</li>
+<li><p>The <a class="reference internal" href="../_generated/pyhf.pdf._ModelConfig.html#pyhf.pdf._ModelConfig" title="pyhf.pdf._ModelConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyhf.pdf._ModelConfig</span></code></a> <code class="docutils literal notranslate"><span class="pre">channel_nbins</span></code> dict is now sorted by
+keys to match the order of the <code class="docutils literal notranslate"><span class="pre">channels</span></code> dict.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1546">#1546</a>)</p></li>
+<li><p>The <a class="reference internal" href="../_generated/pyhf.workspace.Workspace.html#pyhf.workspace.Workspace.data" title="pyhf.workspace.Workspace.data"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.workspace.Workspace.data()</span></code></a> <code class="docutils literal notranslate"><span class="pre">with_aux</span></code> keyword arg has been
+renamed to <code class="docutils literal notranslate"><span class="pre">include_auxdata</span></code> to improve API consistency.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1562">#1562</a>)</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018, Lukas Heinrich, Matthew Feickert, Giordon Stark.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

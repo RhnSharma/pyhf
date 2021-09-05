@@ -1,0 +1,6 @@
+﻿pyhf.infer.calculators.generate\_asimov\_data
+=============================================
+
+.. currentmodule:: pyhf.infer.calculators
+
+.. autofunction:: generate_asimov_data

@@ -1,0 +1,6 @@
+﻿pyhf.infer.intervals.upperlimit
+===============================
+
+.. currentmodule:: pyhf.infer.intervals
+
+.. autofunction:: upperlimit

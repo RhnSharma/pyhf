@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidPatchLookup
+==================================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidPatchLookup

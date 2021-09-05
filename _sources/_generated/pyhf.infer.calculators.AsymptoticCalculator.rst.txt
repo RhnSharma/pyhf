@@ -1,0 +1,61 @@
+﻿AsymptoticCalculator
+====================
+
+.. currentmodule:: pyhf.infer.calculators
+
+.. autoclass:: AsymptoticCalculator
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: AsymptoticCalculator.distributions
+   
+   
+   .. automethod:: AsymptoticCalculator.expected_pvalues
+   
+   
+   .. automethod:: AsymptoticCalculator.pvalues
+   
+   
+   .. automethod:: AsymptoticCalculator.teststatistic
+   
+
+   
+   

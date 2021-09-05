@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidPdfParameters
+====================================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidPdfParameters

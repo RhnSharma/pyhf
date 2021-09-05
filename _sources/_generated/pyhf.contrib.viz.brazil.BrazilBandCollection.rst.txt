@@ -1,0 +1,85 @@
+BrazilBandCollection
+====================
+
+.. currentmodule:: pyhf.contrib.viz.brazil
+
+.. autoclass:: BrazilBandCollection
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: BrazilBandCollection.axes
+   .. autoattribute:: BrazilBandCollection.clb
+   .. autoattribute:: BrazilBandCollection.cls_exp
+   .. autoattribute:: BrazilBandCollection.cls_obs
+   .. autoattribute:: BrazilBandCollection.clsb
+   .. autoattribute:: BrazilBandCollection.one_sigma_band
+   .. autoattribute:: BrazilBandCollection.test_size
+   .. autoattribute:: BrazilBandCollection.two_sigma_band
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+   
+   

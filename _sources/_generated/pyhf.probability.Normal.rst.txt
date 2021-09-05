@@ -1,0 +1,54 @@
+﻿Normal
+======
+
+.. currentmodule:: pyhf.probability
+
+.. autoclass:: Normal
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: Normal.expected_data
+   
+   
+   
+
+   
+   

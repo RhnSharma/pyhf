@@ -1,0 +1,22 @@
+﻿pyhf.compat
+===========
+
+.. rubric:: Description
+
+.. automodule:: pyhf.compat
+
+.. currentmodule:: pyhf.compat
+
+
+
+
+.. rubric:: Functions
+
+.. autosummary::
+    :toctree: .
+    
+    interpret_rootname
+    
+    paramset_to_rootnames
+    
+

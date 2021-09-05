@@ -1,0 +1,6 @@
+﻿pyhf.infer.test\_statistics.q0
+==============================
+
+.. currentmodule:: pyhf.infer.test_statistics
+
+.. autofunction:: q0

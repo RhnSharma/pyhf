@@ -1,0 +1,6 @@
+pyhf.compat.paramset\_to\_rootnames
+===================================
+
+.. currentmodule:: pyhf.compat
+
+.. autofunction:: paramset_to_rootnames

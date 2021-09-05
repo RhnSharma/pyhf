@@ -1,0 +1,56 @@
+﻿code0
+=====
+
+.. currentmodule:: pyhf.interpolators
+
+.. autoclass:: code0
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: code0._precompute
+   
+   
+   .. automethod:: code0._precompute_alphasets
+   
+
+   
+   

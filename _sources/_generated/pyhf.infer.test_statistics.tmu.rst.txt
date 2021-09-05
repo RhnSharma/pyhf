@@ -1,0 +1,6 @@
+﻿pyhf.infer.test\_statistics.tmu
+===============================
+
+.. currentmodule:: pyhf.infer.test_statistics
+
+.. autofunction:: tmu

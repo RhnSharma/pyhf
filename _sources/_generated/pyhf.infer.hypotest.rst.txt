@@ -1,0 +1,6 @@
+﻿pyhf.infer.hypotest
+===================
+
+.. currentmodule:: pyhf.infer
+
+.. autofunction:: hypotest

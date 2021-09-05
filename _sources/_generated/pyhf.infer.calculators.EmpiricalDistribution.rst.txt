@@ -1,0 +1,55 @@
+﻿EmpiricalDistribution
+=====================
+
+.. currentmodule:: pyhf.infer.calculators
+
+.. autoclass:: EmpiricalDistribution
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: EmpiricalDistribution.expected_value
+   
+   
+   .. automethod:: EmpiricalDistribution.pvalue
+   
+
+   
+   

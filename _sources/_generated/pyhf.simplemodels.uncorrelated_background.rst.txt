@@ -1,0 +1,6 @@
+﻿pyhf.simplemodels.uncorrelated\_background
+==========================================
+
+.. currentmodule:: pyhf.simplemodels
+
+.. autofunction:: uncorrelated_background

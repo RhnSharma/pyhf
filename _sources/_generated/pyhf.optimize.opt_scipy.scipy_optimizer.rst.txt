@@ -1,0 +1,71 @@
+﻿scipy\_optimizer
+================
+
+.. currentmodule:: pyhf.optimize.opt_scipy
+
+.. autoclass:: scipy_optimizer
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: scipy_optimizer.name
+   .. autoattribute:: scipy_optimizer.tolerance
+   .. autoattribute:: scipy_optimizer.solver_options
+   .. autoattribute:: scipy_optimizer.maxiter
+   .. autoattribute:: scipy_optimizer.verbose
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: scipy_optimizer._get_minimizer
+   
+   
+   
+   
+   .. automethod:: scipy_optimizer._minimize
+   
+   
+   
+   
+   
+   
+   
+
+   
+   

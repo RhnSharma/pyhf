@@ -1,0 +1,62 @@
+﻿histosys
+========
+
+.. currentmodule:: pyhf.modifiers
+
+.. autoclass:: histosys
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: histosys.is_constrained
+   .. autoattribute:: histosys.op_code
+   .. autoattribute:: histosys.pdf_type
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: histosys.required_parset
+   
+
+   
+   

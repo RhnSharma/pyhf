@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidOptimizer
+================================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidOptimizer

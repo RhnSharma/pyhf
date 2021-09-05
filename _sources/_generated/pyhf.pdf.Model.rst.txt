@@ -1,0 +1,82 @@
+﻿Model
+=====
+
+.. currentmodule:: pyhf.pdf
+
+.. autoclass:: Model
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: Model.nominal_rates
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: Model._modifications
+   
+   
+   .. automethod:: Model.constraint_logpdf
+   
+   
+   .. automethod:: Model.expected_actualdata
+   
+   
+   .. automethod:: Model.expected_auxdata
+   
+   
+   .. automethod:: Model.expected_data
+   
+   
+   .. automethod:: Model.logpdf
+   
+   
+   .. automethod:: Model.mainlogpdf
+   
+   
+   .. automethod:: Model.make_pdf
+   
+   
+   
+   .. automethod:: Model.pdf
+   
+
+   
+   

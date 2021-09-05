@@ -1,0 +1,6 @@
+pyhf.compat.interpret\_rootname
+===============================
+
+.. currentmodule:: pyhf.compat
+
+.. autofunction:: interpret_rootname

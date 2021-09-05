@@ -1,0 +1,6 @@
+﻿pyhf.infer.mle.fixed\_poi\_fit
+==============================
+
+.. currentmodule:: pyhf.infer.mle
+
+.. autofunction:: fixed_poi_fit

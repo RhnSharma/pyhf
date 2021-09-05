@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidSpecification
+====================================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidSpecification

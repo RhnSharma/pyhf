@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidMeasurement
+==================================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidMeasurement

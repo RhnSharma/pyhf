@@ -1,0 +1,63 @@
+﻿Simultaneous
+============
+
+.. currentmodule:: pyhf.probability
+
+.. autoclass:: Simultaneous
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: Simultaneous._joint_logpdf
+   
+   
+   .. automethod:: Simultaneous.expected_data
+   
+   
+   .. automethod:: Simultaneous.log_prob
+   
+   
+   .. automethod:: Simultaneous.sample
+   
+
+   
+   

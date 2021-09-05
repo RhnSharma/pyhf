@@ -1,0 +1,62 @@
+﻿staterror
+=========
+
+.. currentmodule:: pyhf.modifiers
+
+.. autoclass:: staterror
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: staterror.is_constrained
+   .. autoattribute:: staterror.op_code
+   .. autoattribute:: staterror.pdf_type
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: staterror.required_parset
+   
+
+   
+   

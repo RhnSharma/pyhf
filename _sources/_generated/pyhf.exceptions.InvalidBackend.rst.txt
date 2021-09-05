@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidBackend
+==============================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidBackend

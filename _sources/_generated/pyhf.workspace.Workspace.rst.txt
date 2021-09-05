@@ -1,0 +1,104 @@
+﻿Workspace
+=========
+
+.. currentmodule:: pyhf.workspace
+
+.. autoclass:: Workspace
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: Workspace.valid_joins
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: Workspace._prune_and_rename
+   
+   
+   .. automethod:: Workspace.build
+   
+   
+   
+   .. automethod:: Workspace.combine
+   
+   
+   
+   .. automethod:: Workspace.data
+   
+   
+   
+   
+   .. automethod:: Workspace.get_measurement
+   
+   
+   
+   
+   .. automethod:: Workspace.model
+   
+   
+   
+   
+   .. automethod:: Workspace.prune
+   
+   
+   .. automethod:: Workspace.rename
+   
+   
+   
+   .. automethod:: Workspace.sorted
+   
+   
+   
+   
+
+   
+   

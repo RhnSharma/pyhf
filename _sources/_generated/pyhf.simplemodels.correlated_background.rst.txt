@@ -1,0 +1,6 @@
+﻿pyhf.simplemodels.correlated\_background
+========================================
+
+.. currentmodule:: pyhf.simplemodels
+
+.. autofunction:: correlated_background

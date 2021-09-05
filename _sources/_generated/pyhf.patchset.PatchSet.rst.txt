@@ -1,0 +1,76 @@
+﻿PatchSet
+========
+
+.. currentmodule:: pyhf.patchset
+
+.. autoclass:: PatchSet
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: PatchSet.description
+   .. autoattribute:: PatchSet.digests
+   .. autoattribute:: PatchSet.labels
+   .. autoattribute:: PatchSet.metadata
+   .. autoattribute:: PatchSet.patches
+   .. autoattribute:: PatchSet.references
+   .. autoattribute:: PatchSet.version
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: PatchSet.apply
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: PatchSet.verify
+   
+   
+
+   
+   

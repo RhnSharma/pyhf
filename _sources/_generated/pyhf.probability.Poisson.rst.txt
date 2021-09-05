@@ -1,0 +1,54 @@
+﻿Poisson
+=======
+
+.. currentmodule:: pyhf.probability
+
+.. autoclass:: Poisson
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: Poisson.expected_data
+   
+   
+   
+
+   
+   

@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidModifier
+===============================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidModifier

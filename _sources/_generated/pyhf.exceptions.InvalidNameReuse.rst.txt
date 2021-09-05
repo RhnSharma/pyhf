@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidNameReuse
+================================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidNameReuse

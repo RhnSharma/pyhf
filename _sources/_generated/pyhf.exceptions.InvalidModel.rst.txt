@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidModel
+============================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidModel

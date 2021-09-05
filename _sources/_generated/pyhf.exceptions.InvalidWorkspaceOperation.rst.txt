@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidWorkspaceOperation
+=========================================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidWorkspaceOperation

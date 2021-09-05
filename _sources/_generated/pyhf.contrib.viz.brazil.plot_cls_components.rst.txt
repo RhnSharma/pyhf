@@ -1,0 +1,6 @@
+pyhf.contrib.viz.brazil.plot\_cls\_components
+=============================================
+
+.. currentmodule:: pyhf.contrib.viz.brazil
+
+.. autofunction:: plot_cls_components

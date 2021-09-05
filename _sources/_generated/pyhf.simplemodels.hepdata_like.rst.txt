@@ -1,0 +1,6 @@
+﻿pyhf.simplemodels.hepdata\_like
+===============================
+
+.. currentmodule:: pyhf.simplemodels
+
+.. autofunction:: hepdata_like

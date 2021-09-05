@@ -1,0 +1,6 @@
+﻿pyhf.infer.utils.get\_test\_stat
+================================
+
+.. currentmodule:: pyhf.infer.utils
+
+.. autofunction:: get_test_stat

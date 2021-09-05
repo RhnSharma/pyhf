@@ -1,0 +1,54 @@
+﻿Independent
+===========
+
+.. currentmodule:: pyhf.probability
+
+.. autoclass:: Independent
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: Independent.log_prob
+   
+   
+
+   
+   

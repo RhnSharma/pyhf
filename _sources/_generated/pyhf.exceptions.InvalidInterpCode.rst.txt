@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidInterpCode
+=================================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidInterpCode

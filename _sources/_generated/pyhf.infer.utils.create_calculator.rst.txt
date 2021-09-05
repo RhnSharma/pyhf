@@ -1,0 +1,6 @@
+﻿pyhf.infer.utils.create\_calculator
+===================================
+
+.. currentmodule:: pyhf.infer.utils
+
+.. autofunction:: create_calculator

@@ -1,0 +1,601 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>pyhf.contrib.viz.brazil &mdash; pyhf 0.6.4.dev2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+        <script src="../../../../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> pyhf
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.4
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../likelihood.html">Likelihood Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../learn.html">Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../outreach.html">Outreach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../development.html">Developing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../babel.html">Translations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../cli.html">Command Line API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api.html">Python API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../citations.html">Use and Citations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../governance/ROADMAP.html">Roadmap (2019-2020)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../release-notes.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributors.html">Contributors</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">pyhf</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+          <li><a href="../../../pyhf.html">pyhf</a> &raquo;</li>
+        
+      <li>pyhf.contrib.viz.brazil</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for pyhf.contrib.viz.brazil</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Brazil Band Plots.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">namedtuple</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;BrazilBandCollection&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;plot_brazil_band&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;plot_cls_components&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;plot_results&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+
+<span class="k">def</span> <span class="fm">__dir__</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">__all__</span>
+
+
+<div class="viewcode-block" id="BrazilBandCollection"><a class="viewcode-back" href="../../../../_generated/pyhf.contrib.viz.brazil.BrazilBandCollection.html#pyhf.contrib.viz.brazil.BrazilBandCollection">[docs]</a><span class="k">class</span> <span class="nc">BrazilBandCollection</span><span class="p">(</span>
+    <span class="n">namedtuple</span><span class="p">(</span>
+        <span class="s2">&quot;BrazilBandCollection&quot;</span><span class="p">,</span>
+        <span class="p">(</span>
+            <span class="s2">&quot;cls_obs&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;cls_exp&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;one_sigma_band&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;two_sigma_band&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;test_size&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;clsb&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;clb&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;axes&quot;</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">)</span>
+<span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    :obj:`collections.namedtuple` containing the</span>
+<span class="sd">    :class:`matplotlib.artist.Artist` objects of the</span>
+<span class="sd">    &quot;Brazil Band&quot; and the observed :math:`\mathrm{CL}_{s+b}` and</span>
+<span class="sd">    :math:`\mathrm{CL}_{b}` --- the components of the</span>
+<span class="sd">    :math:`\mathrm{CL}_{s}` ratio.</span>
+<span class="sd">    Returned by :func:`~pyhf.contrib.viz.brazil.plot_results`.</span>
+
+<span class="sd">    :param cls_obs: The :class:`matplotlib.lines.Line2D` of the</span>
+<span class="sd">     :math:`\mathrm{CL}_{s,\mathrm{obs}}` line.</span>
+
+<span class="sd">    :param cls_exp: The :obj:`list` of :class:`matplotlib.lines.Line2D` of the</span>
+<span class="sd">     :math:`\mathrm{CL}_{s,\mathrm{exp}}` lines.</span>
+
+<span class="sd">    :param one_sigma_band: The :class:`matplotlib.collections.PolyCollection` of</span>
+<span class="sd">     the :math:`\mathrm{CL}_{s,\mathrm{exp}}` :math:`\pm1\sigma` band.</span>
+
+<span class="sd">    :param two_sigma_band: The :class:`matplotlib.collections.PolyCollection` of</span>
+<span class="sd">     the :math:`\mathrm{CL}_{s,\mathrm{exp}}` :math:`\pm2\sigma` band.</span>
+
+<span class="sd">    :param test_size: The :class:`matplotlib.lines.Line2D` of the test size line.</span>
+
+<span class="sd">    :param clsb: The :class:`matplotlib.lines.Line2D` of the observed</span>
+<span class="sd">     :math:`\mathrm{CL}_{s+b}` line.</span>
+
+<span class="sd">    :param clb: The :class:`matplotlib.lines.Line2D` of the observed</span>
+<span class="sd">     :math:`\mathrm{CL}_{b}` line.</span>
+
+<span class="sd">    :param axes: The :class:`matplotlib.axes.Axes` the artists are plotted on.</span>
+<span class="sd">    &quot;&quot;&quot;</span></div>
+
+
+<div class="viewcode-block" id="plot_brazil_band"><a class="viewcode-back" href="../../../../_generated/pyhf.contrib.viz.brazil.plot_brazil_band.html#pyhf.contrib.viz.brazil.plot_brazil_band">[docs]</a><span class="k">def</span> <span class="nf">plot_brazil_band</span><span class="p">(</span><span class="n">test_pois</span><span class="p">,</span> <span class="n">cls_obs</span><span class="p">,</span> <span class="n">cls_exp</span><span class="p">,</span> <span class="n">test_size</span><span class="p">,</span> <span class="n">ax</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Plot the values of :math:`\mathrm{CL}_{s,\mathrm{obs}}` and the</span>
+<span class="sd">    :math:`\mathrm{CL}_{s,\mathrm{exp}}` band (the &quot;Brazil band&quot;) for a series</span>
+<span class="sd">    of hypothesis tests for various POI values.</span>
+
+<span class="sd">    Example:</span>
+
+<span class="sd">        :func:`plot_brazil_band` is generally meant to be used inside</span>
+<span class="sd">        :func:`~pyhf.contrib.viz.brazil.plot_results` but can be used by itself.</span>
+
+<span class="sd">        &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">        &gt;&gt;&gt; import matplotlib.pyplot as plt</span>
+<span class="sd">        &gt;&gt;&gt; import pyhf</span>
+<span class="sd">        &gt;&gt;&gt; import pyhf.contrib.viz.brazil</span>
+<span class="sd">        &gt;&gt;&gt; pyhf.set_backend(&quot;numpy&quot;)</span>
+<span class="sd">        &gt;&gt;&gt; model  = pyhf.simplemodels.uncorrelated_background(</span>
+<span class="sd">        ...     signal=[12.0, 11.0], bkg=[50.0, 52.0], bkg_uncertainty=[3.0, 7.0]</span>
+<span class="sd">        ... )</span>
+<span class="sd">        &gt;&gt;&gt; observations = [51, 48]</span>
+<span class="sd">        &gt;&gt;&gt; data = observations + model.config.auxdata</span>
+<span class="sd">        &gt;&gt;&gt; test_pois = np.linspace(0, 5, 41)</span>
+<span class="sd">        &gt;&gt;&gt; results = [</span>
+<span class="sd">        ...     pyhf.infer.hypotest(test_poi, data, model, return_expected_set=True)</span>
+<span class="sd">        ...     for test_poi in test_pois</span>
+<span class="sd">        ... ]</span>
+<span class="sd">        &gt;&gt;&gt; cls_obs = np.array([test[0] for test in results]).flatten()</span>
+<span class="sd">        &gt;&gt;&gt; cls_exp = [</span>
+<span class="sd">        ...     np.array([test[1][sigma_idx] for test in results]).flatten()</span>
+<span class="sd">        ...     for sigma_idx in range(5)</span>
+<span class="sd">        ... ]</span>
+<span class="sd">        &gt;&gt;&gt; test_size = 0.05</span>
+<span class="sd">        &gt;&gt;&gt; fig, ax = plt.subplots()</span>
+<span class="sd">        &gt;&gt;&gt; artists = pyhf.contrib.viz.brazil.plot_brazil_band(</span>
+<span class="sd">        ...     test_pois, cls_obs, cls_exp, test_size, ax</span>
+<span class="sd">        ... )</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        test_pois (:obj:`list` or :obj:`array`): The values of the POI where the</span>
+<span class="sd">         hypothesis tests were performed.</span>
+<span class="sd">        cls_obs (:obj:`list` or :obj:`array`): The values of</span>
+<span class="sd">         :math:`\mathrm{CL}_{s,\mathrm{obs}}` for the POIs tested in ``test_pois``.</span>
+<span class="sd">        cls_exp (:obj:`list` or :obj:`array`): The values of the</span>
+<span class="sd">         :math:`\mathrm{CL}_{s,\mathrm{exp}}` band for the POIs tested in</span>
+<span class="sd">         ``test_pois``.</span>
+<span class="sd">        test_size (:obj:`float`): The size, :math:`\alpha`, of the test.</span>
+<span class="sd">        ax (:obj:`matplotlib.axes.Axes`): The matplotlib axis object to plot on.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        :obj:`tuple`: The :obj:`matplotlib.aritst` objects drawn.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">line_color</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;color&quot;</span><span class="p">,</span> <span class="s2">&quot;black&quot;</span><span class="p">)</span>
+    <span class="p">(</span><span class="n">cls_obs_line</span><span class="p">,)</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+        <span class="n">test_pois</span><span class="p">,</span> <span class="n">cls_obs</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">line_color</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$\mathrm</span><span class="si">{CL}</span><span class="s2">_</span><span class="si">{s}</span><span class="s2">$&quot;</span>
+    <span class="p">)</span>
+
+    <span class="n">cls_exp_lines</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">color</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="mi">5</span> <span class="o">*</span> <span class="p">[</span><span class="n">line_color</span><span class="p">]):</span>
+        <span class="p">(</span><span class="n">_cls_exp_line</span><span class="p">,)</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+            <span class="n">test_pois</span><span class="p">,</span>
+            <span class="n">cls_exp</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span>
+            <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;dotted&quot;</span> <span class="k">if</span> <span class="n">idx</span> <span class="o">!=</span> <span class="mi">2</span> <span class="k">else</span> <span class="s2">&quot;dashed&quot;</span><span class="p">,</span>
+            <span class="n">label</span><span class="o">=</span><span class="kc">None</span> <span class="k">if</span> <span class="n">idx</span> <span class="o">!=</span> <span class="mi">2</span> <span class="k">else</span> <span class="sa">r</span><span class="s2">&quot;$\mathrm</span><span class="si">{CL}</span><span class="s2">_{s,\mathrm</span><span class="si">{exp}</span><span class="s2">}$&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">cls_exp_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_cls_exp_line</span><span class="p">)</span>
+    <span class="n">one_sigma_band</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span>
+        <span class="n">test_pois</span><span class="p">,</span>
+        <span class="n">cls_exp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+        <span class="n">cls_exp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>
+        <span class="n">facecolor</span><span class="o">=</span><span class="s2">&quot;yellow&quot;</span><span class="p">,</span>
+        <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$\pm2\sigma$ $\mathrm</span><span class="si">{CL}</span><span class="s2">_{s,\mathrm</span><span class="si">{exp}</span><span class="s2">}$&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">two_sigma_band</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span>
+        <span class="n">test_pois</span><span class="p">,</span>
+        <span class="n">cls_exp</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+        <span class="n">cls_exp</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+        <span class="n">facecolor</span><span class="o">=</span><span class="s2">&quot;green&quot;</span><span class="p">,</span>
+        <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$\pm1\sigma$ $\mathrm</span><span class="si">{CL}</span><span class="s2">_{s,\mathrm</span><span class="si">{exp}</span><span class="s2">}$&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">test_size_color</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;test_size_color&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">)</span>
+    <span class="n">test_size_linestyle</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;test_size_linestyle&quot;</span><span class="p">,</span> <span class="s2">&quot;solid&quot;</span><span class="p">)</span>
+    <span class="p">(</span><span class="n">test_size_line</span><span class="p">,)</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+        <span class="n">test_pois</span><span class="p">,</span>
+        <span class="p">[</span><span class="n">test_size</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_pois</span><span class="p">),</span>
+        <span class="n">color</span><span class="o">=</span><span class="n">test_size_color</span><span class="p">,</span>
+        <span class="n">linestyle</span><span class="o">=</span><span class="n">test_size_linestyle</span><span class="p">,</span>
+        <span class="n">label</span><span class="o">=</span><span class="sa">rf</span><span class="s2">&quot;$\alpha=</span><span class="si">{</span><span class="n">test_size</span><span class="si">}</span><span class="s2">$&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">cls_obs_line</span><span class="p">,</span> <span class="n">cls_exp_lines</span><span class="p">,</span> <span class="n">one_sigma_band</span><span class="p">,</span> <span class="n">two_sigma_band</span><span class="p">,</span> <span class="n">test_size_line</span></div>
+
+
+<div class="viewcode-block" id="plot_cls_components"><a class="viewcode-back" href="../../../../_generated/pyhf.contrib.viz.brazil.plot_cls_components.html#pyhf.contrib.viz.brazil.plot_cls_components">[docs]</a><span class="k">def</span> <span class="nf">plot_cls_components</span><span class="p">(</span><span class="n">test_pois</span><span class="p">,</span> <span class="n">tail_probs</span><span class="p">,</span> <span class="n">ax</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Plot the values of :math:`\mathrm{CL}_{s+b}` and :math:`\mathrm{CL}_{b}`</span>
+<span class="sd">    --- the components of the :math:`\mathrm{CL}_{s}` ratio --- for a series of</span>
+<span class="sd">    hypothesis tests for various POI values.</span>
+
+<span class="sd">    Example:</span>
+
+<span class="sd">        :func:`plot_cls_components` is generally meant to be used inside</span>
+<span class="sd">        :func:`~pyhf.contrib.viz.brazil.plot_results` but can be used by itself.</span>
+
+<span class="sd">        &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">        &gt;&gt;&gt; import matplotlib.pyplot as plt</span>
+<span class="sd">        &gt;&gt;&gt; import pyhf</span>
+<span class="sd">        &gt;&gt;&gt; import pyhf.contrib.viz.brazil</span>
+<span class="sd">        &gt;&gt;&gt; pyhf.set_backend(&quot;numpy&quot;)</span>
+<span class="sd">        &gt;&gt;&gt; model = pyhf.simplemodels.uncorrelated_background(</span>
+<span class="sd">        ...     signal=[12.0, 11.0], bkg=[50.0, 52.0], bkg_uncertainty=[3.0, 7.0]</span>
+<span class="sd">        ... )</span>
+<span class="sd">        &gt;&gt;&gt; observations = [51, 48]</span>
+<span class="sd">        &gt;&gt;&gt; data = observations + model.config.auxdata</span>
+<span class="sd">        &gt;&gt;&gt; test_pois = np.linspace(0, 5, 41)</span>
+<span class="sd">        &gt;&gt;&gt; results = [</span>
+<span class="sd">        ...     pyhf.infer.hypotest(</span>
+<span class="sd">        ...         test_poi, data, model, return_expected_set=True, return_tail_probs=True</span>
+<span class="sd">        ...     )</span>
+<span class="sd">        ...     for test_poi in test_pois</span>
+<span class="sd">        ... ]</span>
+<span class="sd">        &gt;&gt;&gt; tail_probs = np.array([test[1] for test in results])</span>
+<span class="sd">        &gt;&gt;&gt; fig, ax = plt.subplots()</span>
+<span class="sd">        &gt;&gt;&gt; artists = pyhf.contrib.viz.brazil.plot_cls_components(test_pois, tail_probs, ax)</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        test_pois (:obj:`list` or :obj:`array`): The values of the POI where the</span>
+<span class="sd">         hypothesis tests were performed.</span>
+<span class="sd">        tail_probs (:obj:`list` or :obj:`array`): The values of</span>
+<span class="sd">         :math:`\mathrm{CL}_{s+b}` and :math:`\mathrm{CL}_{b}` for the POIs</span>
+<span class="sd">         tested in ``test_pois``.</span>
+<span class="sd">        ax (:obj:`matplotlib.axes.Axes`): The matplotlib axis object to plot on.</span>
+<span class="sd">        Keywords:</span>
+<span class="sd">         * ``no_clb`` (:obj:`bool`): Bool for not plotting the</span>
+<span class="sd">           :math:`\mathrm{CL}_{b}` component.</span>
+
+<span class="sd">         * ``no_clsb`` (:obj:`bool`): Bool for not plotting the</span>
+<span class="sd">           :math:`\mathrm{CL}_{s+b}` component.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        :obj:`tuple`: The :obj:`matplotlib.lines.Line2D` artists drawn.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">clsb_obs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">tail_prob</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">tail_prob</span> <span class="ow">in</span> <span class="n">tail_probs</span><span class="p">])</span>
+    <span class="n">clb_obs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">tail_prob</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">tail_prob</span> <span class="ow">in</span> <span class="n">tail_probs</span><span class="p">])</span>
+
+    <span class="n">linewidth</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;linewidth&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">no_clsb</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;no_clsb&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+    <span class="n">no_clb</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;no_clb&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+
+    <span class="n">clsb_obs_line_artist</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">no_clsb</span><span class="p">:</span>
+        <span class="n">clsb_color</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;clsb_color&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">)</span>
+        <span class="p">(</span><span class="n">clsb_obs_line_artist</span><span class="p">,)</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+            <span class="n">test_pois</span><span class="p">,</span>
+            <span class="n">clsb_obs</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">clsb_color</span><span class="p">,</span>
+            <span class="n">linewidth</span><span class="o">=</span><span class="n">linewidth</span><span class="p">,</span>
+            <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$\mathrm</span><span class="si">{CL}</span><span class="s2">_{s+b}$&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+
+    <span class="n">clb_obs_line_artist</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">no_clb</span><span class="p">:</span>
+        <span class="n">clb_color</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;clb_color&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+        <span class="p">(</span><span class="n">clb_obs_line_artist</span><span class="p">,)</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+            <span class="n">test_pois</span><span class="p">,</span>
+            <span class="n">clb_obs</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">clb_color</span><span class="p">,</span>
+            <span class="n">linewidth</span><span class="o">=</span><span class="n">linewidth</span><span class="p">,</span>
+            <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$\mathrm</span><span class="si">{CL}</span><span class="s2">_</span><span class="si">{b}</span><span class="s2">$&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">clsb_obs_line_artist</span><span class="p">,</span> <span class="n">clb_obs_line_artist</span></div>
+
+
+<div class="viewcode-block" id="plot_results"><a class="viewcode-back" href="../../../../_generated/pyhf.contrib.viz.brazil.plot_results.html#pyhf.contrib.viz.brazil.plot_results">[docs]</a><span class="k">def</span> <span class="nf">plot_results</span><span class="p">(</span><span class="n">test_pois</span><span class="p">,</span> <span class="n">tests</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Plot a series of hypothesis tests for various POI values.</span>
+<span class="sd">    For more detail on use of keywords see</span>
+<span class="sd">    :func:`~pyhf.contrib.viz.brazil.plot_brazil_band` and</span>
+<span class="sd">    :func:`~pyhf.contrib.viz.brazil.plot_cls_components`.</span>
+
+<span class="sd">    Example:</span>
+
+<span class="sd">        A Brazil band plot.</span>
+
+<span class="sd">        &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">        &gt;&gt;&gt; import matplotlib.pyplot as plt</span>
+<span class="sd">        &gt;&gt;&gt; import pyhf</span>
+<span class="sd">        &gt;&gt;&gt; import pyhf.contrib.viz.brazil</span>
+<span class="sd">        &gt;&gt;&gt; pyhf.set_backend(&quot;numpy&quot;)</span>
+<span class="sd">        &gt;&gt;&gt; model = pyhf.simplemodels.uncorrelated_background(</span>
+<span class="sd">        ...     signal=[12.0, 11.0], bkg=[50.0, 52.0], bkg_uncertainty=[3.0, 7.0]</span>
+<span class="sd">        ... )</span>
+<span class="sd">        &gt;&gt;&gt; observations = [51, 48]</span>
+<span class="sd">        &gt;&gt;&gt; data = observations + model.config.auxdata</span>
+<span class="sd">        &gt;&gt;&gt; test_pois = np.linspace(0, 5, 41)</span>
+<span class="sd">        &gt;&gt;&gt; results = [</span>
+<span class="sd">        ...     pyhf.infer.hypotest(test_poi, data, model, return_expected_set=True)</span>
+<span class="sd">        ...     for test_poi in test_pois</span>
+<span class="sd">        ... ]</span>
+<span class="sd">        &gt;&gt;&gt; fig, ax = plt.subplots()</span>
+<span class="sd">        &gt;&gt;&gt; artists = pyhf.contrib.viz.brazil.plot_results(test_pois, results, ax=ax)</span>
+
+<span class="sd">        A Brazil band plot with the components of the :math:`\mathrm{CL}_{s}`</span>
+<span class="sd">        ratio drawn on top.</span>
+
+<span class="sd">        &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">        &gt;&gt;&gt; import matplotlib.pyplot as plt</span>
+<span class="sd">        &gt;&gt;&gt; import pyhf</span>
+<span class="sd">        &gt;&gt;&gt; import pyhf.contrib.viz.brazil</span>
+<span class="sd">        &gt;&gt;&gt; pyhf.set_backend(&quot;numpy&quot;)</span>
+<span class="sd">        &gt;&gt;&gt; model = pyhf.simplemodels.uncorrelated_background(</span>
+<span class="sd">        ...     signal=[12.0, 11.0], bkg=[50.0, 52.0], bkg_uncertainty=[3.0, 7.0]</span>
+<span class="sd">        ... )</span>
+<span class="sd">        &gt;&gt;&gt; observations = [51, 48]</span>
+<span class="sd">        &gt;&gt;&gt; data = observations + model.config.auxdata</span>
+<span class="sd">        &gt;&gt;&gt; test_pois = np.linspace(0, 5, 41)</span>
+<span class="sd">        &gt;&gt;&gt; results = [</span>
+<span class="sd">        ...     pyhf.infer.hypotest(</span>
+<span class="sd">        ...         test_poi, data, model, return_expected_set=True, return_tail_probs=True</span>
+<span class="sd">        ...     )</span>
+<span class="sd">        ...     for test_poi in test_pois</span>
+<span class="sd">        ... ]</span>
+<span class="sd">        &gt;&gt;&gt; fig, ax = plt.subplots()</span>
+<span class="sd">        &gt;&gt;&gt; artists = pyhf.contrib.viz.brazil.plot_results(</span>
+<span class="sd">        ...     test_pois, results, ax=ax, components=True</span>
+<span class="sd">        ... )</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        test_pois (:obj:`list` or :obj:`array`): The values of the POI where the</span>
+<span class="sd">          hypothesis tests were performed.</span>
+<span class="sd">        tests (:obj:`list` or :obj:`array`): The collection of :math:`p`-value-like</span>
+<span class="sd">          values (:math:`\mathrm{CL}_{s}` values or tail probabilities) from</span>
+<span class="sd">          the hypothesis tests.</span>
+<span class="sd">          If the ``components`` keyword argument is ``True``,  ``tests`` is required</span>
+<span class="sd">          to have the same structure as :func:`pyhf.infer.hypotest`&#39;s return</span>
+<span class="sd">          when using ``return_expected_set=True`` and ``return_tail_probs=True``:</span>
+<span class="sd">          a tuple of :math:`\mathrm{CL}_{s}`,</span>
+<span class="sd">          :math:`\left[\mathrm{CL}_{s+b}, \mathrm{CL}_{b}\right]`,</span>
+<span class="sd">          :math:`\mathrm{CL}_{s,\mathrm{exp}}` band.</span>
+<span class="sd">        test_size (:obj:`float`): The size, :math:`\alpha`, of the test.</span>
+<span class="sd">        ax (:obj:`matplotlib.axes.Axes`): The matplotlib axis object to plot on.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        :class:`BrazilBandCollection`: Artist containing the :obj:`matplotlib.artist`</span>
+<span class="sd">        objects drawn.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">ax</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+
+    <span class="n">plot_components</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;components&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+    <span class="n">no_cls</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;no_cls&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">plot_components</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">tests</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;The components of &#39;tests&#39; should have len of 3 to visualize the CLs components but have len </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">tests</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="si">}</span><span class="s2">.&quot;</span>
+            <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&#39;tests&#39; should have format of: [CLs_obs, [CLsb, CLb], [CLs_exp band]]&quot;</span>
+        <span class="p">)</span>
+
+    <span class="n">cls_obs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">test</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">test</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">])</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tests</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="c1"># split into components</span>
+        <span class="n">tail_probs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">test</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">test</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">])</span>
+        <span class="n">CLs_exp_set</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">test</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="k">for</span> <span class="n">test</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">CLs_exp_set</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">test</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">test</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">])</span>
+    <span class="n">cls_exp</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">exp_set</span><span class="p">[</span><span class="n">sigma_idx</span><span class="p">]</span> <span class="k">for</span> <span class="n">exp_set</span> <span class="ow">in</span> <span class="n">CLs_exp_set</span><span class="p">])</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">sigma_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="p">]</span>
+
+    <span class="n">brazil_band_artists</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">plot_brazil_band</span><span class="p">(</span><span class="n">test_pois</span><span class="p">,</span> <span class="n">cls_obs</span><span class="p">,</span> <span class="n">cls_exp</span><span class="p">,</span> <span class="n">test_size</span><span class="p">,</span> <span class="n">ax</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">no_cls</span>
+        <span class="k">else</span> <span class="p">(</span><span class="kc">None</span><span class="p">,)</span> <span class="o">*</span> <span class="mi">5</span>
+    <span class="p">)</span>
+
+    <span class="n">clsb</span><span class="p">,</span> <span class="n">clb</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">plot_cls_components</span><span class="p">(</span><span class="n">test_pois</span><span class="p">,</span> <span class="n">tail_probs</span><span class="p">,</span> <span class="n">ax</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">plot_components</span>
+        <span class="k">else</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="n">x_label</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;xlabel&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\mu$ (POI)&quot;</span><span class="p">)</span>
+    <span class="n">y_label</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;ylabel&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;$\mathrm</span><span class="si">{CL}</span><span class="s2">_</span><span class="si">{s}</span><span class="s2">$&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">x_label</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">y_label</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_yscale</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;log&quot;</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">test_size</span> <span class="o">*</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># Order legend: ensure CLs expected band and test size are last in legend</span>
+    <span class="n">handles</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">no_cls</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">label_part</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;exp&quot;</span><span class="p">,</span> <span class="s2">&quot;pm1&quot;</span><span class="p">,</span> <span class="s2">&quot;pm2&quot;</span><span class="p">,</span> <span class="s2">&quot;alpha&quot;</span><span class="p">]:</span>
+            <span class="n">label_idx</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="n">idx</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span> <span class="k">if</span> <span class="n">label_part</span> <span class="ow">in</span> <span class="n">label</span>
+            <span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">handles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">handles</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">label_idx</span><span class="p">))</span>
+            <span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">labels</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">label_idx</span><span class="p">))</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s2">&quot;best&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">BrazilBandCollection</span><span class="p">(</span><span class="o">*</span><span class="n">brazil_band_artists</span><span class="p">,</span> <span class="n">clsb</span><span class="p">,</span> <span class="n">clb</span><span class="p">,</span> <span class="n">ax</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018, Lukas Heinrich, Matthew Feickert, Giordon Stark.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

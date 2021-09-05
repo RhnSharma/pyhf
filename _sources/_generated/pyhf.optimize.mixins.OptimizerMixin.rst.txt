@@ -1,0 +1,65 @@
+﻿OptimizerMixin
+==============
+
+.. currentmodule:: pyhf.optimize.mixins
+
+.. autoclass:: OptimizerMixin
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: OptimizerMixin.maxiter
+   .. autoattribute:: OptimizerMixin.verbose
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: OptimizerMixin._internal_minimize
+   
+   
+   .. automethod:: OptimizerMixin._internal_postprocess
+   
+   
+   
+   .. automethod:: OptimizerMixin.minimize
+   
+   
+
+   
+   

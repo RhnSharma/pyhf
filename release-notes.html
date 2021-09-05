@@ -1,0 +1,734 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Release Notes &mdash; pyhf 0.6.4.dev2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "macros": {"bm": ["\\boldsymbol{#1}", 1], "HiFa": "\\texttt{HistFactory}", "Root": "\\texttt{ROOT}", "RooStats": "\\texttt{RooStats}", "RooFit": "\\texttt{RooFit}", "pyhf": "\\texttt{pyhf}", "CLs": "\\mathrm{CL}_{s}", "freeset": "\\bm{\\eta}", "constrset": "\\bm{\\chi}", "singleconstr": "\\chi", "channelcounts": "\\bm{n}", "auxdata": "\\bm{a}", "poiset": "\\bm{\\psi}", "nuisset": "\\bm{\\theta}", "fullset": "\\bm{\\phi}", "singlefull": "\\phi", "TeV": "\\textrm{TeV}"}}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script src="_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributors" href="contributors.html" />
+    <link rel="prev" title="Roadmap (2019-2020)" href="governance/ROADMAP.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pyhf
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.4
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="likelihood.html">Likelihood Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learn.html">Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outreach.html">Outreach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Developing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="babel.html">Translations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Python API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citations.html">Use and Citations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="governance/ROADMAP.html">Roadmap (2019-2020)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#release-v0-6-3"><code class="docutils literal notranslate"><span class="pre">v0.6.3</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#important-notes">Important Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fixes">Fixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#features">Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#python-api">Python API</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#release-v0-6-2"><code class="docutils literal notranslate"><span class="pre">v0.6.2</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Important Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Fixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Python API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cli-api">CLI API</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#contributors">Contributors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#release-v0-6-1"><code class="docutils literal notranslate"><span class="pre">v0.6.1</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Important Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Fixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Python API</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#release-v0-6-0"><code class="docutils literal notranslate"><span class="pre">v0.6.0</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">Important Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Fixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id15">Python API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16">CLI API</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">Contributors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#release-v0-5-4"><code class="docutils literal notranslate"><span class="pre">v0.5.4</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id19">Fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#release-v0-5-3"><code class="docutils literal notranslate"><span class="pre">v0.5.3</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Fixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id23">Python API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id24">CLI API</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">Contributors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyhf</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Release Notes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/release-notes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="release-notes">
+<h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="release-v0-6-3">
+<h2><a class="reference external" href="https://github.com/scikit-hep/pyhf/releases/tag/v0.6.3"><code class="docutils literal notranslate"><span class="pre">v0.6.3</span></code></a><a class="headerlink" href="#release-v0-6-3" title="Permalink to this headline">¶</a></h2>
+<p>This is a patch release from <code class="docutils literal notranslate"><span class="pre">v0.6.2</span></code> → <code class="docutils literal notranslate"><span class="pre">v0.6.3</span></code>.</p>
+<div class="section" id="important-notes">
+<h3>Important Notes<a class="headerlink" href="#important-notes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>With the addition of writing ROOT files in <a class="reference external" href="https://github.com/scikit-hep/uproot4/releases/tag/4.1.0"><code class="docutils literal notranslate"><span class="pre">uproot</span></code> <code class="docutils literal notranslate"><span class="pre">v4.1.0</span></code></a> the
+<code class="docutils literal notranslate"><span class="pre">xmlio</span></code> extra no longer requires <code class="docutils literal notranslate"><span class="pre">uproot3</span></code> and all dependencies on
+<code class="docutils literal notranslate"><span class="pre">uproot3</span></code> and <code class="docutils literal notranslate"><span class="pre">uproot3-methods</span></code> have been dropped.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1567">#1567</a>)</p></li>
+<li><p>All backends are now fully compatible and tested with
+<a class="reference external" href="https://www.python.org/dev/peps/pep-0596/">Python 3.9</a>.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1574">#1574</a>)</p></li>
+<li><p>The TensorFlow backend now supports compatibility with TensorFlow <code class="docutils literal notranslate"><span class="pre">v2.2.1</span></code>
+and later and TensorFlow Probability <code class="docutils literal notranslate"><span class="pre">v0.10.1</span></code> and later.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1001">#1001</a>)</p></li>
+<li><p>The <a class="reference internal" href="_generated/pyhf.workspace.Workspace.html#pyhf.workspace.Workspace.data" title="pyhf.workspace.Workspace.data"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.workspace.Workspace.data()</span></code></a> <code class="docutils literal notranslate"><span class="pre">with_aux</span></code> keyword arg has been
+renamed to <code class="docutils literal notranslate"><span class="pre">include_auxdata</span></code> to improve API consistency.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1562">#1562</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="fixes">
+<h3>Fixes<a class="headerlink" href="#fixes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The weakref bug with Click <code class="docutils literal notranslate"><span class="pre">v8.0+</span></code> was resolved.
+<code class="docutils literal notranslate"><span class="pre">pyhf</span></code> is now fully compatible with Click <code class="docutils literal notranslate"><span class="pre">v7</span></code> and <code class="docutils literal notranslate"><span class="pre">v8</span></code> releases.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1530">#1530</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="features">
+<h3>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="python-api">
+<h4>Python API<a class="headerlink" href="#python-api" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p>Model parameter names are now propagated to optimizers through addition of the
+<a class="reference internal" href="_generated/pyhf.pdf._ModelConfig.html#pyhf.pdf._ModelConfig.par_names" title="pyhf.pdf._ModelConfig.par_names"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.pdf._ModelConfig.par_names()</span></code></a> API.
+<a class="reference internal" href="_generated/pyhf.pdf._ModelConfig.html#pyhf.pdf._ModelConfig.par_names" title="pyhf.pdf._ModelConfig.par_names"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.pdf._ModelConfig.par_names()</span></code></a> also handles non-scalar modifiers with
+1 parameter.
+(PRs <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1536">#1536</a>, <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1560">#1560</a>)</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyhf</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">pyhf</span><span class="o">.</span><span class="n">simplemodels</span><span class="o">.</span><span class="n">uncorrelated_background</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">signal</span><span class="o">=</span><span class="p">[</span><span class="mf">12.0</span><span class="p">,</span> <span class="mf">11.0</span><span class="p">],</span> <span class="n">bkg</span><span class="o">=</span><span class="p">[</span><span class="mf">50.0</span><span class="p">,</span> <span class="mf">52.0</span><span class="p">],</span> <span class="n">bkg_uncertainty</span><span class="o">=</span><span class="p">[</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">]</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">parameters</span>
+<span class="go">[&#39;mu&#39;, &#39;uncorr_bkguncrt&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">npars</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">par_names</span><span class="p">()</span>
+<span class="go">[&#39;mu&#39;, &#39;uncorr_bkguncrt[0]&#39;, &#39;uncorr_bkguncrt[1]&#39;]</span>
+</pre></div>
+</div>
+</li>
+<li><p>The <a class="reference internal" href="_generated/pyhf.pdf._ModelConfig.html#pyhf.pdf._ModelConfig" title="pyhf.pdf._ModelConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyhf.pdf._ModelConfig</span></code></a> <code class="docutils literal notranslate"><span class="pre">channel_nbins</span></code> dict is now sorted by
+keys to match the order of the <code class="docutils literal notranslate"><span class="pre">channels</span></code> dict.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1546">#1546</a>)</p></li>
+<li><p>The <a class="reference internal" href="_generated/pyhf.workspace.Workspace.html#pyhf.workspace.Workspace.data" title="pyhf.workspace.Workspace.data"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.workspace.Workspace.data()</span></code></a> <code class="docutils literal notranslate"><span class="pre">with_aux</span></code> keyword arg has been
+renamed to <code class="docutils literal notranslate"><span class="pre">include_auxdata</span></code> to improve API consistency.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1562">#1562</a>)</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="release-v0-6-2">
+<h2><a class="reference external" href="https://github.com/scikit-hep/pyhf/releases/tag/v0.6.2"><code class="docutils literal notranslate"><span class="pre">v0.6.2</span></code></a><a class="headerlink" href="#release-v0-6-2" title="Permalink to this headline">¶</a></h2>
+<p>This is a patch release from <code class="docutils literal notranslate"><span class="pre">v0.6.1</span></code> → <code class="docutils literal notranslate"><span class="pre">v0.6.2</span></code>.</p>
+<div class="section" id="id2">
+<h3>Important Notes<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The <a class="reference internal" href="_generated/pyhf.simplemodels.hepdata_like.html#pyhf.simplemodels.hepdata_like" title="pyhf.simplemodels.hepdata_like"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.simplemodels.hepdata_like()</span></code></a> API has been deprecated in favor of
+<a class="reference internal" href="_generated/pyhf.simplemodels.uncorrelated_background.html#pyhf.simplemodels.uncorrelated_background" title="pyhf.simplemodels.uncorrelated_background"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.simplemodels.uncorrelated_background()</span></code></a>.
+The <a class="reference internal" href="_generated/pyhf.simplemodels.hepdata_like.html#pyhf.simplemodels.hepdata_like" title="pyhf.simplemodels.hepdata_like"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.simplemodels.hepdata_like()</span></code></a> API will be removed in <code class="docutils literal notranslate"><span class="pre">pyhf</span></code> <code class="docutils literal notranslate"><span class="pre">v0.7.0</span></code>.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1438">#1438</a>)</p></li>
+<li><p>There is a small breaking API change for <a class="reference internal" href="_generated/pyhf.contrib.viz.brazil.plot_results.html#pyhf.contrib.viz.brazil.plot_results" title="pyhf.contrib.viz.brazil.plot_results"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.contrib.viz.brazil.plot_results()</span></code></a>.
+See the Python API changes section for more information.</p></li>
+<li><p>The <a class="reference internal" href="_generated/pyhf.patchset.PatchSet.html#pyhf.patchset.PatchSet" title="pyhf.patchset.PatchSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyhf.patchset.PatchSet</span></code></a> schema now allows string types for patch values in patchsets.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1488">#1488</a>)</p></li>
+<li><p>Only lower bounds on core dependencies are now set.
+This allows for greater developer freedom and reduces the risk of breaking
+user’s applications by unnecessarily constraining libraries.
+This also means that users will be responsible for ensuring that their
+installed dependencies do not conflict with or break <code class="docutils literal notranslate"><span class="pre">pyhf</span></code>.
+c.f. Hynek Schlawack’s blog post <a class="reference external" href="https://hynek.me/articles/semver-will-not-save-you/">Semantic Versioning Will Not Save You</a> for more in-depth coverage
+on this topic.
+For most users nothing should change.
+This mainly affects developers of other libraries in which <code class="docutils literal notranslate"><span class="pre">pyhf</span></code> is a dependency.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1382">#1382</a>)</p></li>
+<li><p>Calling <code class="docutils literal notranslate"><span class="pre">dir()</span></code> on any <code class="docutils literal notranslate"><span class="pre">pyhf</span></code> module or trying to tab complete an API will
+now provide a more helpfully restricted view of the available APIs.
+This should help provide better exploration of the <code class="docutils literal notranslate"><span class="pre">pyhf</span></code> API.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1403">#1403</a>)</p></li>
+<li><p>Docker images of releases are now published to both <a class="reference external" href="https://hub.docker.com/r/pyhf/pyhf/tags">Docker Hub</a> and to the <a class="reference external" href="https://github.com/scikit-hep/pyhf/pkgs/container/pyhf">GitHub Container
+Registry</a>.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1444">#1444</a>)</p></li>
+<li><p>CUDA enabled Docker images are now available for release <code class="docutils literal notranslate"><span class="pre">v0.6.1</span></code> and later
+on <a class="reference external" href="https://hub.docker.com/r/pyhf/cuda">Docker Hub</a> and the <a class="reference external" href="https://github.com/pyhf/cuda-images/pkgs/container/cuda-images">GitHub
+Container Registry</a>.
+Visit <a class="reference external" href="https://github.com/pyhf/cuda-images">github.com/pyhf/cuda-images</a> for more
+information.</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>Fixes<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Allow for precision to be properly set for the tensorlib <code class="docutils literal notranslate"><span class="pre">ones</span></code> and <code class="docutils literal notranslate"><span class="pre">zeros</span></code>
+methods through a <code class="docutils literal notranslate"><span class="pre">dtype</span></code> argument.
+This allows for precision to be properly set through the <a class="reference internal" href="_generated/pyhf.set_backend.html#pyhf.set_backend" title="pyhf.set_backend"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.set_backend()</span></code></a>
+<code class="docutils literal notranslate"><span class="pre">precision</span></code> argument.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1369">#1369</a>)</p></li>
+<li><p>The default precision for all backends is now <code class="docutils literal notranslate"><span class="pre">64b</span></code>.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1400">#1400</a>)</p></li>
+<li><p>Add check to ensure that POIs are not fixed during a fit.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1409">#1409</a>)</p></li>
+<li><p>Parameter name strings are now normalized to remove trailing spaces.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1436">#1436</a>)</p></li>
+<li><p>The logging level is now not automatically set in <code class="xref py py-class docutils literal notranslate"><span class="pre">pyhf.contrib.utils</span></code>.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1460">#1460</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>Features<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h4>Python API<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The <a class="reference internal" href="_generated/pyhf.simplemodels.hepdata_like.html#pyhf.simplemodels.hepdata_like" title="pyhf.simplemodels.hepdata_like"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.simplemodels.hepdata_like()</span></code></a> API has been deprecated in favor of
+<a class="reference internal" href="_generated/pyhf.simplemodels.uncorrelated_background.html#pyhf.simplemodels.uncorrelated_background" title="pyhf.simplemodels.uncorrelated_background"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.simplemodels.uncorrelated_background()</span></code></a>.
+The <a class="reference internal" href="_generated/pyhf.simplemodels.hepdata_like.html#pyhf.simplemodels.hepdata_like" title="pyhf.simplemodels.hepdata_like"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.simplemodels.hepdata_like()</span></code></a> API will be removed in <code class="docutils literal notranslate"><span class="pre">pyhf</span></code> <code class="docutils literal notranslate"><span class="pre">v0.7.0</span></code>.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1438">#1438</a>)</p></li>
+<li><p>The <a class="reference internal" href="_generated/pyhf.simplemodels.correlated_background.html#pyhf.simplemodels.correlated_background" title="pyhf.simplemodels.correlated_background"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.simplemodels.correlated_background()</span></code></a> API has been added to
+provide an example model with a single channel with a correlated background
+uncertainty.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1435">#1435</a>)</p></li>
+<li><p>Add CLs component plotting kwargs to <a class="reference internal" href="_generated/pyhf.contrib.viz.brazil.plot_results.html#pyhf.contrib.viz.brazil.plot_results" title="pyhf.contrib.viz.brazil.plot_results"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.contrib.viz.brazil.plot_results()</span></code></a>.
+This allows CLs+b and CLb components of the CLs ratio to be plotted as well.
+To be more consistent with the <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> API,
+<a class="reference internal" href="_generated/pyhf.contrib.viz.brazil.plot_results.html#pyhf.contrib.viz.brazil.plot_results" title="pyhf.contrib.viz.brazil.plot_results"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.contrib.viz.brazil.plot_results()</span></code></a> now returns a lists of the artists
+drawn on the axis and moves the <code class="docutils literal notranslate"><span class="pre">ax</span></code> arguments to the to the last argument.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1377">#1377</a>)</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">pyhf.compat</span></code> module has been added to aid in translating to and from ROOT
+names.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1439">#1439</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="cli-api">
+<h4>CLI API<a class="headerlink" href="#cli-api" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The CLI API now supports a <code class="docutils literal notranslate"><span class="pre">patchset</span> <span class="pre">inspect</span></code> API to list the individual
+patches in a <code class="docutils literal notranslate"><span class="pre">PatchSet</span></code>.
+(PR <a class="reference external" href="https://github.com/scikit-hep/pyhf/pull/1412">#1412</a>)</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pyhf patchset inspect <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>PATCHSET<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="contributors">
+<h3>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">v0.6.2</span></code> benefited from contributions from:</p>
+<ul class="simple">
+<li><p>Alexander Held</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="release-v0-6-1">
+<h2><a class="reference external" href="https://github.com/scikit-hep/pyhf/releases/tag/v0.6.1"><code class="docutils literal notranslate"><span class="pre">v0.6.1</span></code></a><a class="headerlink" href="#release-v0-6-1" title="Permalink to this headline">¶</a></h2>
+<p>This is a patch release from <code class="docutils literal notranslate"><span class="pre">v0.6.0</span></code> → <code class="docutils literal notranslate"><span class="pre">v0.6.1</span></code>.</p>
+<div class="section" id="id7">
+<h3>Important Notes<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>As a result of changes to the default behavior of <code class="docutils literal notranslate"><span class="pre">torch.distributions</span></code> in
+PyTorch <code class="docutils literal notranslate"><span class="pre">v1.8.0</span></code>, accommodating changes have been made in the underlying
+implementations for <a class="reference internal" href="_generated/pyhf.tensor.pytorch_backend.pytorch_backend.html#pyhf.tensor.pytorch_backend.pytorch_backend" title="pyhf.tensor.pytorch_backend.pytorch_backend"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.tensor.pytorch_backend.pytorch_backend()</span></code></a>.
+These changes require a new lower bound of <code class="docutils literal notranslate"><span class="pre">torch</span></code> <code class="docutils literal notranslate"><span class="pre">v1.8.0</span></code> for use of the
+PyTorch backend.</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>Fixes<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>In the PyTorch backend the <code class="docutils literal notranslate"><span class="pre">validate_args</span></code> kwarg is used with
+<code class="docutils literal notranslate"><span class="pre">torch.distributions</span></code> to ensure a continuous approximation of the Poisson
+distribution in <code class="docutils literal notranslate"><span class="pre">torch</span></code> <code class="docutils literal notranslate"><span class="pre">v1.8.0+</span></code>.</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>Features<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id10">
+<h4>Python API<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">solver_options</span></code> kwarg can be passed to the
+<a class="reference internal" href="_generated/pyhf.optimize.opt_scipy.scipy_optimizer.html#pyhf.optimize.opt_scipy.scipy_optimizer" title="pyhf.optimize.opt_scipy.scipy_optimizer"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.optimize.opt_scipy.scipy_optimizer()</span></code></a> optimizer for additional
+configuration of the minimization.
+See <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/reference/generated/scipy.optimize.show_options.html#scipy.optimize.show_options" title="(in SciPy v1.7.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">scipy.optimize.show_options()</span></code></a> for additional options of optimization
+solvers.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">torch</span></code> API is now used to provide the implementations of the <code class="docutils literal notranslate"><span class="pre">ravel</span></code>,
+<code class="docutils literal notranslate"><span class="pre">tile</span></code>, and <code class="docutils literal notranslate"><span class="pre">outer</span></code> tensorlib methods for the PyTorch backend.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="release-v0-6-0">
+<h2><a class="reference external" href="https://github.com/scikit-hep/pyhf/releases/tag/v0.6.0"><code class="docutils literal notranslate"><span class="pre">v0.6.0</span></code></a><a class="headerlink" href="#release-v0-6-0" title="Permalink to this headline">¶</a></h2>
+<p>This is a minor release from <code class="docutils literal notranslate"><span class="pre">v0.5.4</span></code> → <code class="docutils literal notranslate"><span class="pre">v0.6.0</span></code>.</p>
+<div class="section" id="id12">
+<h3>Important Notes<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Please note this release has <strong>API breaking changes</strong> and carefully read these
+notes while updating your code to the <code class="docutils literal notranslate"><span class="pre">v0.6.0</span></code> API.
+Perhaps most relevant is the changes to the <a class="reference internal" href="_generated/pyhf.infer.hypotest.html#pyhf.infer.hypotest" title="pyhf.infer.hypotest"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.infer.hypotest()</span></code></a> API, which now
+uses a <code class="docutils literal notranslate"><span class="pre">calctype</span></code> argument to differentiate between using an asymptotic calculator
+or a toy calculator, and a <code class="docutils literal notranslate"><span class="pre">test_stat</span></code> kwarg to specify which test statistic
+the calculator should use, with <code class="docutils literal notranslate"><span class="pre">'qtilde'</span></code>, corresponding to
+<a class="reference internal" href="_generated/pyhf.infer.test_statistics.qmu_tilde.html#pyhf.infer.test_statistics.qmu_tilde" title="pyhf.infer.test_statistics.qmu_tilde"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.infer.test_statistics.qmu_tilde()</span></code></a>, now the default option.
+It also relies more heavily on using kwargs to pass options through to the optimizer.</p></li>
+<li><p>Following the recommendations of <a class="reference external" href="https://numpy.org/neps/nep-0029-deprecation_policy.html">NEP 29 — Recommend Python and NumPy version support as a community policy standard</a> <code class="docutils literal notranslate"><span class="pre">pyhf</span></code> <code class="docutils literal notranslate"><span class="pre">v0.6.0</span></code> drops support for
+Python 3.6.
+<a class="reference external" href="https://www.python.org/dev/peps/pep-0494/">PEP 494 – Python 3.6 Release Schedule</a> also notes that Python 3.6 will be end of life in December 2021, so
+<code class="docutils literal notranslate"><span class="pre">pyhf</span></code> is moving forward with a minimum required runtime of Python 3.7.</p></li>
+<li><p>Support for the discovery test statistic, <span class="math notranslate nohighlight">\(q_{0}\)</span>, has now been added through
+the <a class="reference internal" href="_generated/pyhf.infer.test_statistics.q0.html#pyhf.infer.test_statistics.q0" title="pyhf.infer.test_statistics.q0"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.infer.test_statistics.q0()</span></code></a> API.</p></li>
+<li><p>Support for pseudoexperiments (toys) has been added through the
+<a class="reference internal" href="_generated/pyhf.infer.calculators.ToyCalculator.html#pyhf.infer.calculators.ToyCalculator" title="pyhf.infer.calculators.ToyCalculator"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.infer.calculators.ToyCalculator()</span></code></a> API.
+Please see the corresponding <a class="reference external" href="https://pyhf.readthedocs.io/en/latest/examples/notebooks/toys.html">example notebook</a> for more detailed exploration
+of the API.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">minuit</span></code> extra, <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pyhf[minuit]</span></code>, now uses and requires
+the <a class="reference external" href="https://iminuit.readthedocs.io/"><code class="docutils literal notranslate"><span class="pre">iminuit</span></code></a> <code class="docutils literal notranslate"><span class="pre">v2.X</span></code> release series and API.
+Note that <code class="docutils literal notranslate"><span class="pre">iminuit</span></code> <code class="docutils literal notranslate"><span class="pre">v2.X</span></code> can result in slight differences in minimization
+results from <code class="docutils literal notranslate"><span class="pre">iminuit</span></code> <code class="docutils literal notranslate"><span class="pre">v1.X</span></code>.</p></li>
+<li><p>The documentation will now be versioned with releases on ReadTheDocs.
+Please use <a class="reference external" href="https://pyhf.readthedocs.io/">pyhf.readthedocs.io</a> to access the documentation for the latest
+stable release of <code class="docutils literal notranslate"><span class="pre">pyhf</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pyhf</span></code> is transtioning away from Stack Overflow to <a class="reference external" href="https://github.com/scikit-hep/pyhf/discussions">GitHub Discussions</a> for
+resolving user questions not covered in the documentation.
+Please check the <a class="reference external" href="https://github.com/scikit-hep/pyhf/discussions">GitHub Discussions</a> page to search for discussions addressing
+your questions and to open up a new discussion if your question is not covered.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pyhf</span></code> has published a paper in the Journal of Open Source Software. <a class="reference external" href="https://doi.org/10.21105/joss.02823"><img alt="JOSS DOI" src="https://joss.theoj.org/papers/10.21105/joss.02823/status.svg" /></a>
+Please make sure to include the paper reference in all citations of <code class="docutils literal notranslate"><span class="pre">pyhf</span></code>, as
+documented in the <a class="reference external" href="https://pyhf.readthedocs.io/en/latest/citations.html">Use and Citations</a> section of the documentation.</p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>Fixes<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Fix bug where all extras triggered warning for installation of the <code class="docutils literal notranslate"><span class="pre">contrib</span></code> extra.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">float</span></code>-like values are used in division for <a class="reference internal" href="_generated/pyhf.writexml.html#module-pyhf.writexml" title="pyhf.writexml"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.writexml()</span></code></a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Model.spec</span></code> now supports building new models from existing models.</p></li>
+<li><p><span class="math notranslate nohighlight">\(p\)</span>-values are now reported based on their quantiles, instead of interpolating
+test statistics and converting to <span class="math notranslate nohighlight">\(p\)</span>-values.</p></li>
+<li><p>Namespace collisions between <code class="docutils literal notranslate"><span class="pre">uproot3</span></code> and <code class="docutils literal notranslate"><span class="pre">uproot</span></code>/<code class="docutils literal notranslate"><span class="pre">uproot4</span></code> have been fixed
+for the <code class="docutils literal notranslate"><span class="pre">xmlio</span></code> extra.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">normsys</span></code> modifier now uses the <a class="reference internal" href="_generated/pyhf.interpolators.code4.html#pyhf.interpolators.code4" title="pyhf.interpolators.code4"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pyhf.interpolators.code4</span></code></a> interpolation
+method by default.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">histosys</span></code> modifier now uses the <a class="reference internal" href="_generated/pyhf.interpolators.code4p.html#pyhf.interpolators.code4p" title="pyhf.interpolators.code4p"><code class="xref py py-mod docutils literal notranslate"><span class="pre">pyhf.interpolators.code4p</span></code></a> interpolation
+method by default.</p></li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h3>Features<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h4>Python API<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">tensorlib</span></code> API now supports a <code class="docutils literal notranslate"><span class="pre">tensorlib.to_numpy</span></code> and
+<code class="docutils literal notranslate"><span class="pre">tensorlib.ravel</span></code> API.</p></li>
+<li><p>The <a class="reference internal" href="_generated/pyhf.infer.calculators.ToyCalculator.html#pyhf.infer.calculators.ToyCalculator" title="pyhf.infer.calculators.ToyCalculator"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.infer.calculators.ToyCalculator()</span></code></a> API has been added to support
+pseudoexperiments (toys).</p></li>
+<li><p>The empirical test statistic distribution API has been added to help support the
+<code class="docutils literal notranslate"><span class="pre">ToyCalculator</span></code> API.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">tolerance</span></code> kwarg to the optimizer API to set a <code class="docutils literal notranslate"><span class="pre">float</span></code> value as a
+tolerance for termination of the fit.</p></li>
+<li><p>The <a class="reference internal" href="_generated/pyhf.optimize.opt_minuit.minuit_optimizer.html#pyhf.optimize.opt_minuit.minuit_optimizer" title="pyhf.optimize.opt_minuit.minuit_optimizer"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.optimize.opt_minuit.minuit_optimizer()</span></code></a> optimizer now can return
+correlations of the fitted parameters through use of the <code class="docutils literal notranslate"><span class="pre">return_correlation</span></code>
+Boolean kwarg.</p></li>
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">pyhf.utils.citation</span></code> API to get a <code class="docutils literal notranslate"><span class="pre">str</span></code> of the preferred BibTeX entry
+for citation of the version of <code class="docutils literal notranslate"><span class="pre">pyhf</span></code> installed.
+See the example for the CLI API for more information.</p></li>
+<li><p>The <a class="reference internal" href="_generated/pyhf.infer.hypotest.html#pyhf.infer.hypotest" title="pyhf.infer.hypotest"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.infer.hypotest()</span></code></a> API now uses a <code class="docutils literal notranslate"><span class="pre">calctype</span></code> argument to differentiate
+between using an asymptotic calculator or a toy calculator, and a <code class="docutils literal notranslate"><span class="pre">test_stat</span></code> kwarg
+to specify which test statistic to use.
+It also relies more heavily on using kwargs to pass options through to the optimizer.</p></li>
+<li><p>The default <code class="docutils literal notranslate"><span class="pre">test_stat</span></code> kwarg for <a class="reference internal" href="_generated/pyhf.infer.hypotest.html#pyhf.infer.hypotest" title="pyhf.infer.hypotest"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.infer.hypotest()</span></code></a> and the calculator
+APIs is <code class="docutils literal notranslate"><span class="pre">'qtilde'</span></code>, which corresponds to the alternative test statistic
+<a class="reference internal" href="_generated/pyhf.infer.test_statistics.qmu_tilde.html#pyhf.infer.test_statistics.qmu_tilde" title="pyhf.infer.test_statistics.qmu_tilde"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyhf.infer.test_statistics.qmu_tilde()</span></code></a>.</p></li>
+<li><p>The return type of <span class="math notranslate nohighlight">\(p\)</span>-value like functions is now a 0-dimensional <code class="docutils literal notranslate"><span class="pre">tensor</span></code>
+(with shape <code class="docutils literal notranslate"><span class="pre">()</span></code>) instead of a <code class="docutils literal notranslate"><span class="pre">float</span></code>.
+This is required to support end-to-end automatic differentiation in future releases.</p></li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h4>CLI API<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The CLI API now supports a <code class="docutils literal notranslate"><span class="pre">--citation</span></code> or <code class="docutils literal notranslate"><span class="pre">--cite</span></code> option to print the
+preferred BibTeX entry for citation of the version of <code class="docutils literal notranslate"><span class="pre">pyhf</span></code> installed.</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ pyhf --citation
+@software<span class="o">{</span>pyhf,
+  <span class="nv">author</span> <span class="o">=</span> <span class="o">{</span>Lukas Heinrich and Matthew Feickert and Giordon Stark<span class="o">}</span>,
+  <span class="nv">title</span> <span class="o">=</span> <span class="s2">&quot;{pyhf: v0.6.0}&quot;</span>,
+  <span class="nv">version</span> <span class="o">=</span> <span class="o">{</span><span class="m">0</span>.6.0<span class="o">}</span>,
+  <span class="nv">doi</span> <span class="o">=</span> <span class="o">{</span><span class="m">10</span>.5281/zenodo.1169739<span class="o">}</span>,
+  <span class="nv">url</span> <span class="o">=</span> <span class="o">{</span>https://doi.org/10.5281/zenodo.1169739<span class="o">}</span>,
+  <span class="nv">note</span> <span class="o">=</span> <span class="o">{</span>https://github.com/scikit-hep/pyhf/releases/tag/v0.6.0<span class="o">}</span>
+<span class="o">}</span>
+
+@article<span class="o">{</span>pyhf_joss,
+  <span class="nv">doi</span> <span class="o">=</span> <span class="o">{</span><span class="m">10</span>.21105/joss.02823<span class="o">}</span>,
+  <span class="nv">url</span> <span class="o">=</span> <span class="o">{</span>https://doi.org/10.21105/joss.02823<span class="o">}</span>,
+  <span class="nv">year</span> <span class="o">=</span> <span class="o">{</span><span class="m">2021</span><span class="o">}</span>,
+  <span class="nv">publisher</span> <span class="o">=</span> <span class="o">{</span>The Open Journal<span class="o">}</span>,
+  <span class="nv">volume</span> <span class="o">=</span> <span class="o">{</span><span class="m">6</span><span class="o">}</span>,
+  <span class="nv">number</span> <span class="o">=</span> <span class="o">{</span><span class="m">58</span><span class="o">}</span>,
+  <span class="nv">pages</span> <span class="o">=</span> <span class="o">{</span><span class="m">2823</span><span class="o">}</span>,
+  <span class="nv">author</span> <span class="o">=</span> <span class="o">{</span>Lukas Heinrich and Matthew Feickert and Giordon Stark and Kyle Cranmer<span class="o">}</span>,
+  <span class="nv">title</span> <span class="o">=</span> <span class="o">{</span>pyhf: pure-Python implementation of HistFactory statistical models<span class="o">}</span>,
+  <span class="nv">journal</span> <span class="o">=</span> <span class="o">{</span>Journal of Open Source Software<span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id17">
+<h3>Contributors<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">v0.6.0</span></code> benefited from contributions from:</p>
+<ul class="simple">
+<li><p>Alexander Held</p></li>
+<li><p>Marco Gorelli</p></li>
+<li><p>Pradyumna Rahul K</p></li>
+<li><p>Eric Schanet</p></li>
+<li><p>Henry Schreiner</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="release-v0-5-4">
+<h2><a class="reference external" href="https://github.com/scikit-hep/pyhf/releases/tag/v0.5.4"><code class="docutils literal notranslate"><span class="pre">v0.5.4</span></code></a><a class="headerlink" href="#release-v0-5-4" title="Permalink to this headline">¶</a></h2>
+<p>This is a patch release from <code class="docutils literal notranslate"><span class="pre">v0.5.3</span></code> → <code class="docutils literal notranslate"><span class="pre">v0.5.4</span></code>.</p>
+<div class="section" id="id19">
+<h3>Fixes<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Require <code class="docutils literal notranslate"><span class="pre">uproot3</span></code> instead of <code class="docutils literal notranslate"><span class="pre">uproot</span></code> <code class="docutils literal notranslate"><span class="pre">v3.X</span></code> releases to avoid conflicts when
+<code class="docutils literal notranslate"><span class="pre">uproot4</span></code> is installed in an environment with <code class="docutils literal notranslate"><span class="pre">uproot</span></code> <code class="docutils literal notranslate"><span class="pre">v3.X</span></code> installed and
+namespace conflicts with <code class="docutils literal notranslate"><span class="pre">uproot-methods</span></code>.
+Adoption of <code class="docutils literal notranslate"><span class="pre">uproot3</span></code> in <code class="docutils literal notranslate"><span class="pre">v0.5.4</span></code> will ensure <code class="docutils literal notranslate"><span class="pre">v0.5.4</span></code> works far into the future
+if XML and ROOT I/O through uproot is required.</p></li>
+</ul>
+<p><strong>Example:</strong></p>
+<p>Without the <code class="docutils literal notranslate"><span class="pre">v0.5.4</span></code> patch release there is a regression in using <code class="docutils literal notranslate"><span class="pre">uproot</span></code> <code class="docutils literal notranslate"><span class="pre">v3.X</span></code>
+and <code class="docutils literal notranslate"><span class="pre">uproot4</span></code> in the same environment (which was swiftly identified and patched by the
+fantastic <code class="docutils literal notranslate"><span class="pre">uproot</span></code> team)</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ python -m pip install <span class="s2">&quot;pyhf[xmlio]&lt;0.5.4&quot;</span>
+$ python -m pip list <span class="p">|</span> grep <span class="s2">&quot;pyhf\|uproot&quot;</span>
+pyhf           <span class="m">0</span>.5.3
+uproot         <span class="m">3</span>.13.1
+uproot-methods <span class="m">0</span>.8.0
+$ python -m pip install uproot4
+$ python -m pip list <span class="p">|</span> grep <span class="s2">&quot;pyhf\|uproot&quot;</span>
+pyhf           <span class="m">0</span>.5.3
+uproot         <span class="m">4</span>.0.0
+uproot-methods <span class="m">0</span>.8.0
+uproot4        <span class="m">4</span>.0.0
+</pre></div>
+</div>
+<p>this is resolved in <code class="docutils literal notranslate"><span class="pre">v0.5.4</span></code> with the requirement of <code class="docutils literal notranslate"><span class="pre">uproot3</span></code></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ python -m pip install <span class="s2">&quot;pyhf[xmlio]&gt;=0.5.4&quot;</span>
+$ python -m pip list <span class="p">|</span> grep <span class="s2">&quot;pyhf\|uproot&quot;</span>
+pyhf            <span class="m">0</span>.5.4
+uproot3         <span class="m">3</span>.14.1
+uproot3-methods <span class="m">0</span>.10.0
+$ python -m pip install uproot4 <span class="c1"># or uproot</span>
+$ python -m pip list <span class="p">|</span> grep <span class="s2">&quot;pyhf\|uproot&quot;</span>
+pyhf            <span class="m">0</span>.5.4
+uproot          <span class="m">4</span>.0.0
+uproot3         <span class="m">3</span>.14.1
+uproot3-methods <span class="m">0</span>.10.0
+uproot4         <span class="m">4</span>.0.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="release-v0-5-3">
+<h2><a class="reference external" href="https://github.com/scikit-hep/pyhf/releases/tag/v0.5.3"><code class="docutils literal notranslate"><span class="pre">v0.5.3</span></code></a><a class="headerlink" href="#release-v0-5-3" title="Permalink to this headline">¶</a></h2>
+<p>This is a patch release from <code class="docutils literal notranslate"><span class="pre">v0.5.2</span></code> → <code class="docutils literal notranslate"><span class="pre">v0.5.3</span></code>.</p>
+<div class="section" id="id21">
+<h3>Fixes<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Workspaces are now immutable</p></li>
+<li><p>ShapeFactor support added to XML reading and writing</p></li>
+<li><p>An error is raised if a fit initialization parameter is outside of its bounds
+(preventing hypotest with POI outside of bounds)</p></li>
+</ul>
+</div>
+<div class="section" id="id22">
+<h3>Features<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id23">
+<h4>Python API<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Inverting hypothesis tests to get upper limits now has an API with
+<code class="docutils literal notranslate"><span class="pre">pyhf.infer.intervals.upperlimit</span></code></p></li>
+<li><p>Building workspaces from a model and data added with <code class="docutils literal notranslate"><span class="pre">pyhf.workspace.build</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id24">
+<h4>CLI API<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Added CLI API for <code class="docutils literal notranslate"><span class="pre">pyhf.infer.fit</span></code>: <code class="docutils literal notranslate"><span class="pre">pyhf</span> <span class="pre">fit</span></code></p></li>
+<li><p>pyhf combine now allows for merging channels: <code class="docutils literal notranslate"><span class="pre">pyhf</span> <span class="pre">combine</span> <span class="pre">--merge-channels</span> <span class="pre">--join</span> <span class="pre">&lt;join</span> <span class="pre">option&gt;</span></code></p></li>
+<li><p>Added utility to download archived pyhf pallets (workspaces + patchsets) to contrib module: <code class="docutils literal notranslate"><span class="pre">pyhf</span> <span class="pre">contrib</span> <span class="pre">download</span></code></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id25">
+<h3>Contributors<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">v0.5.3</span></code> benefited from contributions from:</p>
+<ul class="simple">
+<li><p>Karthikeyan Singaravelan</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="contributors.html" class="btn btn-neutral float-right" title="Contributors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="governance/ROADMAP.html" class="btn btn-neutral float-left" title="Roadmap (2019-2020)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018, Lukas Heinrich, Matthew Feickert, Giordon Stark.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

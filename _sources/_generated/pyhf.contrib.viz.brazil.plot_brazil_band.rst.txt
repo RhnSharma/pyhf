@@ -1,0 +1,6 @@
+pyhf.contrib.viz.brazil.plot\_brazil\_band
+==========================================
+
+.. currentmodule:: pyhf.contrib.viz.brazil
+
+.. autofunction:: plot_brazil_band

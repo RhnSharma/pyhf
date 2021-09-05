@@ -1,0 +1,6 @@
+﻿pyhf.infer.utils.all\_pois\_floating
+====================================
+
+.. currentmodule:: pyhf.infer.utils
+
+.. autofunction:: all_pois_floating

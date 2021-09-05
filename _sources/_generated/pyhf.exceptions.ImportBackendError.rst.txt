@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.ImportBackendError
+==================================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: ImportBackendError

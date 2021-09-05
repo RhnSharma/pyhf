@@ -1,0 +1,75 @@
+﻿minuit\_optimizer
+=================
+
+.. currentmodule:: pyhf.optimize.opt_minuit
+
+.. autoclass:: minuit_optimizer
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   .. rubric:: Attributes
+
+   
+   .. autoattribute:: minuit_optimizer.name
+   .. autoattribute:: minuit_optimizer.errordef
+   .. autoattribute:: minuit_optimizer.steps
+   .. autoattribute:: minuit_optimizer.strategy
+   .. autoattribute:: minuit_optimizer.tolerance
+   .. autoattribute:: minuit_optimizer.maxiter
+   .. autoattribute:: minuit_optimizer.verbose
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: minuit_optimizer._get_minimizer
+   
+   
+   
+   
+   .. automethod:: minuit_optimizer._minimize
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+   
+   

@@ -1,0 +1,73 @@
+﻿\_ModelConfig
+=============
+
+.. currentmodule:: pyhf.pdf
+
+.. autoclass:: _ModelConfig
+   :show-inheritance:
+
+   .. automethod:: __init__
+
+   
+   
+   
+
+   
+
+   
+   .. rubric:: Methods
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   .. automethod:: _ModelConfig._create_and_register_paramsets
+   
+   
+   .. automethod:: _ModelConfig.par_names
+   
+   
+   .. automethod:: _ModelConfig.par_slice
+   
+   
+   .. automethod:: _ModelConfig.param_set
+   
+   
+   .. automethod:: _ModelConfig.set_poi
+   
+   
+   .. automethod:: _ModelConfig.suggested_bounds
+   
+   
+   .. automethod:: _ModelConfig.suggested_fixed
+   
+   
+   .. automethod:: _ModelConfig.suggested_init
+   
+
+   
+   

@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>BrazilBandCollection &mdash; pyhf 0.6.4.dev2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "macros": {"bm": ["\\boldsymbol{#1}", 1], "HiFa": "\\texttt{HistFactory}", "Root": "\\texttt{ROOT}", "RooStats": "\\texttt{RooStats}", "RooFit": "\\texttt{RooFit}", "pyhf": "\\texttt{pyhf}", "CLs": "\\mathrm{CL}_{s}", "freeset": "\\bm{\\eta}", "constrset": "\\bm{\\chi}", "singleconstr": "\\chi", "channelcounts": "\\bm{n}", "auxdata": "\\bm{a}", "poiset": "\\bm{\\psi}", "nuisset": "\\bm{\\theta}", "fullset": "\\bm{\\phi}", "singlefull": "\\phi", "TeV": "\\textrm{TeV}"}}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pyhf.contrib.viz.brazil.plot_brazil_band" href="pyhf.contrib.viz.brazil.plot_brazil_band.html" />
+    <link rel="prev" title="pyhf.contrib.viz.brazil" href="pyhf.contrib.viz.brazil.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pyhf
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.4
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../likelihood.html">Likelihood Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learn.html">Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outreach.html">Outreach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Developing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../babel.html">Translations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli.html">Command Line API</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">Python API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api.html#top-level">Top-Level</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#probability-distribution-functions-pdfs">Probability Distribution Functions (PDFs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#making-models-from-pdfs">Making Models from PDFs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#backends">Backends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#optimizers">Optimizers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#modifiers">Modifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#interpolators">Interpolators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#inference">Inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#exceptions">Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#utilities">Utilities</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api.html#contrib">Contrib</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="pyhf.contrib.viz.brazil.html">pyhf.contrib.viz.brazil</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">BrazilBandCollection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyhf.contrib.viz.brazil.plot_brazil_band.html">pyhf.contrib.viz.brazil.plot_brazil_band</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyhf.contrib.viz.brazil.plot_cls_components.html">pyhf.contrib.viz.brazil.plot_cls_components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyhf.contrib.viz.brazil.plot_results.html">pyhf.contrib.viz.brazil.plot_results</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pyhf.contrib.utils.download.html">pyhf.contrib.utils.download</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../citations.html">Use and Citations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../governance/ROADMAP.html">Roadmap (2019-2020)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release-notes.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors.html">Contributors</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyhf</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../api.html">Python API</a> &raquo;</li>
+        
+          <li><a href="pyhf.contrib.viz.brazil.html">pyhf.contrib.viz.brazil</a> &raquo;</li>
+        
+      <li>BrazilBandCollection</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/_generated/pyhf.contrib.viz.brazil.BrazilBandCollection.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="brazilbandcollection">
+<h1>BrazilBandCollection<a class="headerlink" href="#brazilbandcollection" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pyhf.contrib.viz.brazil.BrazilBandCollection">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyhf.contrib.viz.brazil.</span></span><span class="sig-name descname"><span class="pre">BrazilBandCollection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls_obs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cls_exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">one_sigma_band</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">two_sigma_band</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clsb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyhf/contrib/viz/brazil.html#BrazilBandCollection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyhf.contrib.viz.brazil.BrazilBandCollection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyhf.contrib.viz.brazil.BrazilBandCollection" title="pyhf.contrib.viz.brazil.BrazilBandCollection"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyhf.contrib.viz.brazil.BrazilBandCollection</span></code></a></p>
+<p><a class="reference external" href="https://docs.python.org/3/library/collections.html#collections.namedtuple" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.namedtuple</span></code></a> containing the
+<a class="reference external" href="https://matplotlib.org/stable/api/artist_api.html#matplotlib.artist.Artist" title="(in Matplotlib v3.4.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">matplotlib.artist.Artist</span></code></a> objects of the
+“Brazil Band” and the observed <span class="math notranslate nohighlight">\(\mathrm{CL}_{s+b}\)</span> and
+<span class="math notranslate nohighlight">\(\mathrm{CL}_{b}\)</span> — the components of the
+<span class="math notranslate nohighlight">\(\mathrm{CL}_{s}\)</span> ratio.
+Returned by <a class="reference internal" href="pyhf.contrib.viz.brazil.plot_results.html#pyhf.contrib.viz.brazil.plot_results" title="pyhf.contrib.viz.brazil.plot_results"><code class="xref py py-func docutils literal notranslate"><span class="pre">plot_results()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cls_obs</strong> – The <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="(in Matplotlib v3.4.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">matplotlib.lines.Line2D</span></code></a> of the
+<span class="math notranslate nohighlight">\(\mathrm{CL}_{s,\mathrm{obs}}\)</span> line.</p></li>
+<li><p><strong>cls_exp</strong> – The <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="(in Matplotlib v3.4.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">matplotlib.lines.Line2D</span></code></a> of the
+<span class="math notranslate nohighlight">\(\mathrm{CL}_{s,\mathrm{exp}}\)</span> lines.</p></li>
+<li><p><strong>one_sigma_band</strong> – The <a class="reference external" href="https://matplotlib.org/stable/api/collections_api.html#matplotlib.collections.PolyCollection" title="(in Matplotlib v3.4.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">matplotlib.collections.PolyCollection</span></code></a> of
+the <span class="math notranslate nohighlight">\(\mathrm{CL}_{s,\mathrm{exp}}\)</span> <span class="math notranslate nohighlight">\(\pm1\sigma\)</span> band.</p></li>
+<li><p><strong>two_sigma_band</strong> – The <a class="reference external" href="https://matplotlib.org/stable/api/collections_api.html#matplotlib.collections.PolyCollection" title="(in Matplotlib v3.4.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">matplotlib.collections.PolyCollection</span></code></a> of
+the <span class="math notranslate nohighlight">\(\mathrm{CL}_{s,\mathrm{exp}}\)</span> <span class="math notranslate nohighlight">\(\pm2\sigma\)</span> band.</p></li>
+<li><p><strong>test_size</strong> – The <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="(in Matplotlib v3.4.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">matplotlib.lines.Line2D</span></code></a> of the test size line.</p></li>
+<li><p><strong>clsb</strong> – The <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="(in Matplotlib v3.4.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">matplotlib.lines.Line2D</span></code></a> of the observed
+<span class="math notranslate nohighlight">\(\mathrm{CL}_{s+b}\)</span> line.</p></li>
+<li><p><strong>clb</strong> – The <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D" title="(in Matplotlib v3.4.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">matplotlib.lines.Line2D</span></code></a> of the observed
+<span class="math notranslate nohighlight">\(\mathrm{CL}_{b}\)</span> line.</p></li>
+<li><p><strong>axes</strong> – The <a class="reference external" href="https://matplotlib.org/stable/api/axes_api.html#matplotlib.axes.Axes" title="(in Matplotlib v3.4.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">matplotlib.axes.Axes</span></code></a> the artists are plotted on.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pyhf.contrib.viz.brazil.BrazilBandCollection.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyhf.contrib.viz.brazil.BrazilBandCollection.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p class="rubric">Attributes</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyhf.contrib.viz.brazil.BrazilBandCollection.axes">
+<span class="sig-name descname"><span class="pre">axes</span></span><a class="headerlink" href="#pyhf.contrib.viz.brazil.BrazilBandCollection.axes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 7</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyhf.contrib.viz.brazil.BrazilBandCollection.clb">
+<span class="sig-name descname"><span class="pre">clb</span></span><a class="headerlink" href="#pyhf.contrib.viz.brazil.BrazilBandCollection.clb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 6</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyhf.contrib.viz.brazil.BrazilBandCollection.cls_exp">
+<span class="sig-name descname"><span class="pre">cls_exp</span></span><a class="headerlink" href="#pyhf.contrib.viz.brazil.BrazilBandCollection.cls_exp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyhf.contrib.viz.brazil.BrazilBandCollection.cls_obs">
+<span class="sig-name descname"><span class="pre">cls_obs</span></span><a class="headerlink" href="#pyhf.contrib.viz.brazil.BrazilBandCollection.cls_obs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyhf.contrib.viz.brazil.BrazilBandCollection.clsb">
+<span class="sig-name descname"><span class="pre">clsb</span></span><a class="headerlink" href="#pyhf.contrib.viz.brazil.BrazilBandCollection.clsb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 5</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyhf.contrib.viz.brazil.BrazilBandCollection.one_sigma_band">
+<span class="sig-name descname"><span class="pre">one_sigma_band</span></span><a class="headerlink" href="#pyhf.contrib.viz.brazil.BrazilBandCollection.one_sigma_band" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyhf.contrib.viz.brazil.BrazilBandCollection.test_size">
+<span class="sig-name descname"><span class="pre">test_size</span></span><a class="headerlink" href="#pyhf.contrib.viz.brazil.BrazilBandCollection.test_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyhf.contrib.viz.brazil.BrazilBandCollection.two_sigma_band">
+<span class="sig-name descname"><span class="pre">two_sigma_band</span></span><a class="headerlink" href="#pyhf.contrib.viz.brazil.BrazilBandCollection.two_sigma_band" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="pyhf.contrib.viz.brazil.plot_brazil_band.html" class="btn btn-neutral float-right" title="pyhf.contrib.viz.brazil.plot_brazil_band" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="pyhf.contrib.viz.brazil.html" class="btn btn-neutral float-left" title="pyhf.contrib.viz.brazil" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2018, Lukas Heinrich, Matthew Feickert, Giordon Stark.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

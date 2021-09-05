@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidPdfData
+==============================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidPdfData

@@ -1,0 +1,6 @@
+﻿pyhf.exceptions.InvalidPatchSet
+===============================
+
+.. currentmodule:: pyhf.exceptions
+
+.. autoexception:: InvalidPatchSet
